@@ -9,4 +9,4 @@ USER roboshop
 COPY package*.json ./
 RUN npm ci  
 COPY server.js /opt/app/
-ENTRYPOINT [ "node" "server.js" ]
+CMD [ "node", "server.js" ]
