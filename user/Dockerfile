@@ -9,4 +9,4 @@ RUN npm ci
 COPY server.js /opt/app/
 RUN chown roboshop:roboshop /opt/app/
 USER roboshop
-ENTRYPOINT [ "node" "server.js" ]
+CMD [ "node", "server.js" ]
