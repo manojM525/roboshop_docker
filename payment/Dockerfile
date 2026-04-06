@@ -9,7 +9,7 @@ COPY requirements.txt .
 RUN apt-get update && apt-get install -y \
         build-essential \
         python3-dev \
-        libpcre3-dev \
+        libpcre2-dev \
     && pip install --no-cache-dir -r requirements.txt \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
